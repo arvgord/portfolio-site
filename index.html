@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            padding: 10px;
+            line-height: 1.5;
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .prompt {
+            color: #0f0;
+        }
+        .command {
+            color: white;
+        }
+        .response {
+            margin-left: 20px;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 16px;
+            background-color: white;
+            animation: blink 0.8s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+<div id="terminal">
+    <div><span class="prompt">$</span> <span class="command">cat ./welcome.txt</span></div>
+    <div class="response">Welcome!</div>
+    <div class="response">Hi, I'm Artem Gordienko, a backend developer specializing in Java and Kotlin.</div>
+    <div class="response">I enjoy creating robust and efficient software solutions.</div>
+    <div class="response">Feel free to explore my work and contact me for collaboration or projects!</div>
+
+    <div><span class="prompt">$</span> <span class="command">cat ./work_experience.txt</span></div>
+    <div class="response">1. Senior Backend Developer at Rosbank (Sep 2021 - Jul 2024):</div>
+    <div class="response">   - Developed backend for a new Internet Banking platform for corporate clients.</div>
+    <div class="response">   - Implemented features like currency exchange and document printing.</div>
+    <div class="response">   - Achieved 70% test coverage to ensure stability.</div>
+    <div class="response">2. Backend Developer at the Bank of Russia (Aug 2020 - Sep 2021):</div>
+    <div class="response">   - Developed applications for monitoring financial institutions.</div>
+    <div class="response">   - Implemented PL/SQL stored procedures and optimized database interactions.</div>
+    <div class="response">3. Backend Developer at QuantumSoft (Sep 2018 - Jul 2020):</div>
+    <div class="response">   - Developed applications for Google using Java and TypeScript for the Google Healthcare project.</div>
+    <div class="response">   - Implemented <a href="https://github.com/GoogleCloudPlatform/healthcare-api-dicom-fuse" target="_blank">DICOMFuse</a>.</div>
+    <div class="response">   - Implemented <a href="https://github.com/GoogleCloudPlatform/qupath-chcapi-extension" target="_blank">QuPath Cloud Healthcare API Extension</a>.</div>
+
+    <div><span class="prompt">$</span> <span class="command">cat ./education.txt</span></div>
+    <div class="response">Tomsk State University of Control Systems and Radioelectronics (Sep 2009 - Jun 2014).</div>
+    <div class="response">Faculty of <a href="https://tusur.ru/en/education/faculties-and-departments/faculty-of-electronic-engineering" target="_blank">Electronic Engineering</a>, specializing in Industrial Electronics.</div>
+
+    <div><span class="prompt">$</span> <span class="command">cat ./skills.txt</span></div>
+    <div class="response">• Java, Kotlin, Spring Boot, Hibernate</div>
+    <div class="response">• PostgreSQL, Oracle, Docker, Git</div>
+    <div class="response">• Linux, Bash, gRPC, Apache Kafka</div>
+
+    <div><span class="prompt">$</span> <span class="command">cat ./hobbies.txt</span></div>
+    <div class="response">• Writing technical articles on <a href="https://habr.com/ru/users/arvgord/publications/articles/" target="_blank">Habr</a>.</div>
+    <div class="response">• Open Source contributions (e.g., Hibernate 6 improvements).</div>
+    <div class="response">• Speaker at conferences, including <a href="https://jpoint.ru/archive/2023/talks/d0db46bf7aac4be2a0f48da2f0f43a12/" target="_blank">JPoint 2023</a>.</div>
+    <div class="response">• Photography.</div>
+
+    <div><span class="prompt">$</span> <span class="command">cat ./contact.txt</span></div>
+    <div class="response">Email: <a href="mailto:arvgord@gmail.com">arvgord@gmail.com</a></div>
+    <div class="response">GitHub: <a href="https://github.com/arvgord" target="_blank">github.com/arvgord</a></div>
+    <div><span class="prompt">$</span> <span class="cursor"></span></div>
+</div>
+</body>
+</html>
